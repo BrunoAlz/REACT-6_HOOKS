@@ -1,9 +1,11 @@
-
+import HookUseState from "../components/HookUseState";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      <HookUseState />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
