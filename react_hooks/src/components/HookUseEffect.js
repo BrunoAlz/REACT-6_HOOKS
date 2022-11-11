@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const HookUseEffect = () => {
-  // Use Effect sem dependências
+  // UseEffect sem dependências
 
   useEffect(() => {
     console.log("Estou sendo Executado");
@@ -12,6 +12,11 @@ const HookUseEffect = () => {
   const changeNumber = () => {
     setNumber(number + 1);
   };
+
+  // useEffect com array de Dependência vazio
+  useEffect(() => {
+    console.log("Sou executado apenas 1 vez")
+  }, []);
 
   return (
     <div>
