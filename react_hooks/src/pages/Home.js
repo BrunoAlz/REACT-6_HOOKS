@@ -5,6 +5,7 @@ import HookUseState from "../components/HookUseState";
 
 import { someContext } from "../components/HookUseContext";
 import HookUseRef from "../components/HookUseRef";
+import HookUseCallback from "../components/HookUseCallback";
 
 const Home = () => {
   const { contextValue } = useContext(someContext);
@@ -18,6 +19,7 @@ const Home = () => {
       <p>Valor do Contexto: {contextValue}</p>
       <hr />
       <HookUseRef />
+      <HookUseCallback />
     </div>
   );
 };
